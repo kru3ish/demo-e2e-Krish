@@ -2,3 +2,6 @@ triggers:
   - path: "*"
     events: [pr, main]
     image_name: demo-e2e-Krish
+  - path: "apps/payments/**"
+    events: [pr]
+    image_name: <your-service-name>-payments
